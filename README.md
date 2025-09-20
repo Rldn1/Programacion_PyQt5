@@ -12,6 +12,8 @@ ISSS: 3% del salario con un tope máximo de $30 mensuales para salarios iguales 
 AFP: 7.25% del salario sin tope máximo  
 Renta: Se calcula por tramos progresivos con porcentajes que van del 10% al 30%
 
+Los trabajadores frecuentemente tienen dificultades para calcular manualmente estos descuentos, especialmente el impuesto sobre la renta que requiere realizar múltiples operaciones matemáticas según diferentes tramos salariales. Esto genera incertidumbre sobre el monto exacto que recibirán neto cada mes y dificulta la planificación financiera personal.
+
 # Solución:
 Se desarrolló una aplicación con interfaz gráfica utilizando PyQt5 que automatiza el cálculo de los tres descuentos obligatorios. La aplicación permite a los usuarios ingresar su salario y obtiene instantáneamente el desglose detallado de cada descuento, el total de deducciones y el salario neto resultante.
 
