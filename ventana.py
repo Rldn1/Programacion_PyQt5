@@ -7,7 +7,7 @@ from PyQt5.QtCore import Qt
 class CalculadoraDescuentos(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Calculadora de Descuentos - El Salvador")
+        self.setWindowTitle("Calculadora de Descuentos")
         self.setGeometry(100, 100, 500, 300)
         
         # Widget central
@@ -65,7 +65,7 @@ class CalculadoraDescuentos(QMainWindow):
         try:
             salario = float(self.salario_edit.text())
             
-            # Cálculo de descuentos (valores 2023 - verificar actualizaciones)
+            # Cálculo de descuentos
             # ISSS: 3% del salario, máximo $30 para salarios >= $1000
             isss = min(salario * 0.03, 30) if salario >= 1000 else salario * 0.03
             
@@ -75,7 +75,7 @@ class CalculadoraDescuentos(QMainWindow):
             # Base para renta (salario - ISSS - AFP)
             base_renta = salario - isss - afp
             
-            # Cálculo de renta según tramos (2023)
+            # Cálculo de renta 
             if base_renta <= 472.00:
                 renta = 0
             elif base_renta <= 895.24:
@@ -88,7 +88,7 @@ class CalculadoraDescuentos(QMainWindow):
             total_descuentos = isss + afp + renta
             salario_neto = salario - total_descuentos
             
-            # Mostrar resultados
+            # Resultados
             self.isss_label.setText(f"${isss:.2f}")
             self.afp_label.setText(f"${afp:.2f}")
             self.renta_label.setText(f"${renta:.2f}")
