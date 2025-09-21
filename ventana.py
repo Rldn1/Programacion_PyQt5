@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
 from PyQt5.QtCore import Qt
 
 class CalculadoraDescuentos(QMainWindow):
-    def _init_(self):
+    def __init__(self):
         super()._init_()
         self.setWindowTitle("Calculadora de Descuentos")
         self.setGeometry(100, 100, 500, 300)
@@ -107,7 +107,7 @@ class CalculadoraDescuentos(QMainWindow):
         self.total_descuentos_label.setText("$0.00")
         self.salario_neto_label.setText("$0.00")
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app = QApplication(sys.argv)
     ventana = CalculadoraDescuentos()
     ventana.show()
