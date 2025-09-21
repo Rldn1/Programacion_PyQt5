@@ -14,7 +14,7 @@ class CalculadoraDescuentos(QMainWindow):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         
-        # Layout principal
+        # Layout principal   
         layout = QVBoxLayout(central_widget)
         
         # Grupo para entrada de datos
