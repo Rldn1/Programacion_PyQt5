@@ -6,7 +6,7 @@ from PyQt5.QtCore import Qt
 
 class CalculadoraDescuentos(QMainWindow):
     def __init__(self):
-        super().__init__()  # Corregido: __init__ con doble guión bajo
+        super().__init__()  
         self.setWindowTitle("Calculadora de Descuentos")
         self.setGeometry(100, 100, 500, 300)
         
@@ -107,7 +107,7 @@ class CalculadoraDescuentos(QMainWindow):
         self.total_descuentos_label.setText("$0.00")
         self.salario_neto_label.setText("$0.00")
 
-if __name__ == "__main__":  # Corregido: __main__ con doble guión bajo
+if __name__ == "__main__":  
     app = QApplication(sys.argv)
     ventana = CalculadoraDescuentos()
     ventana.show()
